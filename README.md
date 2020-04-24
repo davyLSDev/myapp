@@ -18,3 +18,16 @@
 * [install npm for node etc](https://stackoverflow.com/questions/42564775/how-to-use-npm-install-without-sudo)
 * [intro to JavaScript TDD](https://jrsinclair.com/articles/2016/gentle-introduction-to-javascript-tdd-intro/)
 * [fomrs](https://www.w3schools.com/html/html_forms.asp)
+
+## Error to report to Dan
+
+* in the indexSpec.js the assert should be 'What up, Dawson'
+```
+it('trims excess whitespace from the name submitted', done => {
+    browser.fill('name', '                Dawson               ');
+    browser.pressButton('Submit', () => {
+      browser.assert.text('h3', 'What up, Dan?');
+      done();
+    });
+  });
+```

@@ -43,14 +43,14 @@ describe('the landing page', () => {
       browser.assert.text('h3', 'What up, Dan?');
       done();
     });
-  }); /*
+  });
   it('trims excess whitespace from the name submitted', done => {
     browser.fill('name', '                Dawson               ');
     browser.pressButton('Submit', () => {
-      browser.assert.text('h3', 'What up, Dan?');
+      browser.assert.text('h3', 'What up, Dawson?');
       done();
     });
-  });
+  }); /*
   it('gets snarky if you forget to enter your name before pressing Submit', done => {
     browser.fill('name', '');
     browser.pressButton('Submit', () => {
