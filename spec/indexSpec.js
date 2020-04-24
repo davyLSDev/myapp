@@ -30,10 +30,39 @@ describe('the landing page', () => {
   /**
    * Put future tests here...
    */
-  it('renders an input form', () => {
-      browser.assert.element('input[type=text]');
-      browser.assert.element('button[type=submit]');
-  });
-
+  
   // ...
+
+  it('renders an input form', () => {
+    browser.assert.element('input[type=text]'); 
+    browser.assert.element('input[type=submit]'); 
+  }); /*
+    it('returns a friendly greeting if you enter your name and press Submit', done => {
+    browser.fill('name', 'Dan');
+    browser.pressButton('Submit', () => {
+      browser.assert.text('h3', 'What up, Dan?');
+      done();
+    });
+  });
+  it('trims excess whitespace from the name submitted', done => {
+    browser.fill('name', '                Dawson               ');
+    browser.pressButton('Submit', () => {
+      browser.assert.text('h3', 'What up, Dan?');
+      done();
+    });
+  });
+  it('gets snarky if you forget to enter your name before pressing Submit', done => {
+    browser.fill('name', '');
+    browser.pressButton('Submit', () => {
+      browser.assert.text('h3', 'Whatevs...');
+      done();
+    });
+  });
+  it('gets snarky if you forget to enter a blank name before pressing Submit', done => {
+    browser.fill('name', '         ');
+    browser.pressButton('Submit', () => {
+      browser.assert.text('h3', 'Please don\'t waste my time');
+      done();
+    });
+  }); */
 });
