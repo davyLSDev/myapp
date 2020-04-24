@@ -36,14 +36,14 @@ describe('the landing page', () => {
   it('renders an input form', () => {
     browser.assert.element('input[type=text]'); 
     browser.assert.element('input[type=submit]'); 
-  }); /*
+  });
     it('returns a friendly greeting if you enter your name and press Submit', done => {
     browser.fill('name', 'Dan');
     browser.pressButton('Submit', () => {
       browser.assert.text('h3', 'What up, Dan?');
       done();
     });
-  });
+  }); /*
   it('trims excess whitespace from the name submitted', done => {
     browser.fill('name', '                Dawson               ');
     browser.pressButton('Submit', () => {
