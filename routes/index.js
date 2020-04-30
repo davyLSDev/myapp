@@ -12,8 +12,14 @@ router.post('/', function(req, res, next) {
   preTrimLength = req.body.name.length;
   let trimName = req.body.name.trim();
   let response = `What up, ${trimName}?`;
-  if (preTrimLength > 0 && trimName.length == 0) {
-    response = 'Please don\'t waste my time';
+  
+  
+  
+  if (trimName.length == 0) {
+    response = 'Whatevs...';
+    if (preTrimLength) {
+      response = 'Please don\'t waste my time';
+    }  
   } 
   
   res.render('index', { title: 'The Friendly Greeting Generator' , response: response });
