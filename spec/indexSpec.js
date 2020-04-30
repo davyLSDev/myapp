@@ -27,12 +27,7 @@ describe('the landing page', () => {
   it('displays the page title', () => {
     browser.assert.text('h1', 'The Friendly Greeting Generator'); 
   });
-  /**
-   * Put future tests here...
-   */
   
-  // ...
-
   it('renders an input form', () => {
     browser.assert.element('input[type=text]'); 
     browser.assert.element('input[type=submit]'); 
@@ -57,12 +52,12 @@ describe('the landing page', () => {
       browser.assert.text('h3', 'Whatevs...');
       done();
     });
-  });
-  it('gets snarky if you forget to enter a blank name before pressing Submit', done => {
+  }); */
+  it('gets snarky if you only enter whitespace before pressing Submit', done => {
     browser.fill('name', '         ');
     browser.pressButton('Submit', () => {
       browser.assert.text('h3', 'Please don\'t waste my time');
       done();
     });
-  }); */
+  });
 });
