@@ -1,8 +1,28 @@
-# This is a tutorial on TDD JavaScript
+myapp
+=====
 
-## Using express, jasmine, and zombie
+An introductory test-driven development tutorial project which uses Express, Jasmine, and Zombie. Some other technologies represented here are: JavaScript, node, nvm, mocha, chai.
 
-### JavaScript, node, nvm, mocha, chai
+# Installation
+
+Clone and execute:
+
+```
+cd myapp
+npm install
+```
+
+# Testing
+
+```
+npm test
+```
+
+# Development Server
+
+```
+npm start
+```
 
 ## Notes
 
@@ -36,3 +56,8 @@ it('trims excess whitespace from the name submitted', done => {
 ## Moving forward
 
 * first commit everything in the project **except** node_modules/
+* "ls -al node_modules" lists all the modules needed for this project
+* "package.json.lock" lists all the modules as dependencies for this project.
+  * it should be checked in to the project repo also
+* "npm install" regenerates these modules
+* 
