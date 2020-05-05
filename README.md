@@ -18,6 +18,7 @@
 * [install npm for node etc](https://stackoverflow.com/questions/42564775/how-to-use-npm-install-without-sudo)
 * [intro to JavaScript TDD](https://jrsinclair.com/articles/2016/gentle-introduction-to-javascript-tdd-intro/)
 * [fomrs](https://www.w3schools.com/html/html_forms.asp)
+* [second installment to Dan's tutorial](https://whatdandoes.info/2020/05/04/How-to-get-started-testing-with-Express-Jasmine-and-Zombie-PART-DEUX/)
 
 ## Error to report to Dan
 
@@ -31,3 +32,7 @@ it('trims excess whitespace from the name submitted', done => {
     });
   });
 ```
+
+## Moving forward
+
+* first commit everything in the project **except** node_modules/
