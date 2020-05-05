@@ -14,6 +14,8 @@ npm install
 
 # Testing
 
+* make sure that the development server is running or else you will get test failures!
+
 ```
 npm test
 ```
@@ -24,7 +26,7 @@ npm test
 npm start
 ```
 
-## Notes
+# Notes
 
 * To keep from having to stop and restart the application as you modify it, use "nodem"
 	* install it first "npu install nodemon -g"
@@ -60,4 +62,3 @@ it('trims excess whitespace from the name submitted', done => {
 * "package.json.lock" lists all the modules as dependencies for this project.
   * it should be checked in to the project repo also
 * "npm install" regenerates these modules
-* 
